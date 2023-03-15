@@ -1,0 +1,51 @@
+server:
+  base_path: /api-localdev
+  port: 8080
+
+auth:
+  token_lifetime:
+    user_access: 20160 # In minutes
+    reset_password: 3600 # In minutes
+    verify_email: 525600 # In minutes
+  signature_salt:
+    reset_password_subject:
+    verify_email_subject:
+  app_client_secret:
+
+asset:
+  base_url:
+
+components:
+  njwt:
+    auth_key:
+    issuer: RunningApp.API
+    default_lifetime: 1440 # In minutes
+  nmailgun:
+    domain:
+    private_api_key:
+    template_path:
+    region: eu
+    default_sender: running-app--no-reply
+  stripe:
+    secret_key: <STRIPE_SECRET_KEY>
+  dashboard:
+    url: <STEREORUN_DASHBOARD_URL>
+
+datasources:
+  db:
+    driver: postgres
+    host: localhost
+    port: 5432
+    username: postgres
+    password: postgres
+    database: localdev_running-app_db
+    max_idle_connection: 15
+    max_open_connection: 10
+    max_connection_lifetime: 1
+  asset:
+    endpoint:
+    access_key_id:
+    secret_access_key:
+    use_ssl:
+    bucket_name:
+    region:

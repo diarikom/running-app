@@ -1,0 +1,13 @@
+# Environment and Config
+*.env
+config.yml
+
+# IDEs
+.idea/
+.vscode/
+
+# Vendor
+vendor/
+# Generated folder
+bin/
+tmp/

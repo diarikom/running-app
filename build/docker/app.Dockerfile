@@ -1,0 +1,13 @@
+FROM alpine:3.11
+
+ARG ARG_NLOG_LEVEL
+ARG ARG_APP_ENV
+
+COPY . /var/app
+
+ENV NLOG_LEVEL $ARG_NLOG_LEVEL
+ENV APP_ENV $ARG_APP_ENV
+
+WORKDIR /var/app
+
+ENTRYPOINT /var/app/running-app-api -env=$APP_ENV

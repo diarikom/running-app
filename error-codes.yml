@@ -1,0 +1,159 @@
+AST001:
+  status: 400
+  message: Unkown asset type
+
+AST002:
+  status: 400
+  message: File too large
+
+AST003:
+  status: 400
+  message: File type is not allowed
+
+AST004:
+  status: 400
+  message: No file uploaded
+
+USR001:
+  status: 400
+  message: Email is already exist
+
+USR002:
+  status: 401
+  message: User is suspended
+
+USR003:
+  status: 401
+  message: User access token is expired
+
+USR004:
+  status: 400
+  message: Malformed
+
+USR005:
+  status: 400
+  message: Password length must be minimum 8 characters
+
+USR006:
+  status: 400
+  message: New password must be different with current password
+
+USR007:
+  status: 401
+  message: Invalid credentials
+
+USR008:
+  status: 400
+  message: User not found
+
+USR009:
+  status: 400
+  message: Unable to send reset password email
+
+USR010:
+  status: 401
+  message: User signature mismatch
+
+USR011:
+  status: 401
+  message: User have not set a password
+
+USR012:
+  status: 400
+  message: Another user has been linked to this third party account
+
+USR013:
+  status: 401
+  message: Device is unathorized to refresh token
+
+USR014:
+  status: 400
+  message: Unknown subscirption plan type
+
+USR015:
+  status: 400
+  message: User has an active subscription
+
+USR016:
+  status: 400
+  message: User has not subscribe to plan
+
+USR017:
+  status: 400
+  message: Voucher is invalid
+
+USR018:
+  status: 400
+  message: Voucher has been redeemed by other user
+
+USR019:
+  status: 400
+  message: Payment Method not attached to user
+
+STRP001:
+  status: 400
+  message: Stripe payment method not found
+
+CLG001:
+  status: 400
+  message: Challenge not found
+
+CLG002:
+  status: 400
+  message: Cannot claim credit from challenge
+
+CLG003:
+  status: 400
+  message: Credit is already claimed
+
+CRD001:
+  status: 400
+  message: Credit Transaction not found
+
+CRD002:
+  status: 400
+  message: User did not achieved the challenged
+
+CRD003:
+  status: 400
+  message: Invalid transaction entry type
+
+CRD004:
+  status: 400
+  message: No pending balance available
+
+CRD005:
+  status: 400
+  message: Insufficent pending balance
+
+CRD006:
+  status: 400
+  message: Transaction has been settled
+
+CRD007:
+  status: 400
+  message: Challenge has been claimed
+
+CRD008:
+  status: 400
+  message: Wallet data is stale. Please try again
+
+CRD009:
+  status: 400
+  message: Pending Credit has been expired
+
+CRD010:
+  status: 400
+  message: Insufficent balance
+
+INT001:
+  status: 400
+  message: Initiative is not Active
+
+INT002:
+  status: 400
+  message: Invalid donation state on update
+
+INT003:
+  status: 400
+  message: Initiative not found
